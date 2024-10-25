@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #153677, #4e085f);
+    /* this creates a background of 135 degrees a gradiant shade of the 2 color codes at the end */
+    padding: 10px;
+    /* padding adds pixels to the sides */
+}
+/* links to the container class in the html and stylizes it */
+.todo-app{
+    /* linking the todo-app class */
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    /* the margin left and right side is set to auto so it's automatically centered */
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    /* h2 for the txt */
+ color: #002765;
+ display: flex;
+ /* flex to align the icon */
+ align-items: center;
+ margin-bottom: 20px;
+}
+.todo-app h2 img{
+    /* h2 img for the image */
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    /* for the box for input */
+    /* when it is only input this will go to all inputs in the file */
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    /* for the add button */
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+     /* since its only ul and li it will apply to every ul li element in the html */
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    /* putting the to colons and before will add to before the elements on the html */
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    /* to add image us url(image location) */
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    /* .checked to modify the checked class in the list elements */
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    /* will update the unchecked image */
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    /* for when hovering over the span x */
+    background: #edeef0;
+}

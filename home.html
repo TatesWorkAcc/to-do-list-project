@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Starting template an be created by doing ! and enter after -->
+<!-- using control and forward slash it will create a comment -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- This will connect to the css file -->
+</head>
+<body>
+<div class="container">
+    <!-- the container class is basically the background in style.css -->
+    <div class="todo-app">
+        <!-- the todo-app class is used to make the white background for the list -->
+        <h2>To-Do List <img src="images/icon.png"></h2>
+        <!-- Shows To-Do List text on website -->
+        <!-- typing img will show a prompt to make the default image syntax -->
+        <!-- image is in the same folder as program files -->
+         <div class="row">
+            <!-- used to create rows between the inputs -->
+            <input type="text" id="input-box" placeholder="Add your text">
+            <!-- type on input from user is input, what it is is an input box, the text seen before user types in it is Add your text -->
+             <button onclick="addTask()">Add</button>
+             <!-- creates an add button -->
+              <!-- the onclick makes it so when clicked it will run the function created in java scrip "addTask" -->
+         </div>
+         <ul id="list-container">
+                                                            <!--    <li class="checked">Task 1</li> 
+                                                                                class checked for being able to check the lists 
+                                                                                ctrl d to duplicate a line 
+                                                                    <li>Task 2</li>
+                                                                    <li>Task 3</li>
+                                                                                li means list -->
+         </ul>
+         <!-- ul means un ordered list -->
+    </div>
+</div>
+    <!-- can create a class name by putting period first then the name and enter -->
+<script src="script.js">
+    // connects the java script to the html file
+</script>
+</body>
+</html>
