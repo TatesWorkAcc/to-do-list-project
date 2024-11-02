@@ -1,0 +1,1 @@
+This to-do-list-project was me trying to learn and understand javascript language and to understand how to manipulate data in the html file
